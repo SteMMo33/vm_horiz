@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="vm_horiz.ItemButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vm_horiz"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="254" MouseUp="UserControl_MouseUp">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Stretch" Margin="5,5,5,5" VerticalAlignment="Stretch" CornerRadius="10,10,10,10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="4"/>
+            </Border.Effect>
+        </Border>
+
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" Width="256" OpacityMask="#FF5D5D5D"/>
+        <Label x:Name="lblDesc1" Content="Descrizione 1" HorizontalAlignment="Left" Margin="20,0,0,50" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="22" Foreground="#FF005DFF"/>
+        <Label x:Name="lblDesc2" Content="Descrizione 2" HorizontalAlignment="Left" Margin="20,0,0,25" VerticalAlignment="Bottom" MaxWidth="300"/>
+        <Label x:Name="lblPrezzo" Content="$ 10.00" HorizontalAlignment="Right" Margin="0,0,12,22" VerticalAlignment="Bottom" FontSize="64" FontWeight="Bold" Foreground="Red">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+    </Grid>
+</UserControl>
