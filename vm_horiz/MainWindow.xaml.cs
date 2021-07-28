@@ -89,13 +89,13 @@ namespace vm_horiz
 		{
 			List<VmItem> list = new List<VmItem>();
 			
-			list.Add(new VmItem() { descrizione1 = "Prodotto 1", descrizione2 = "Prodotto molto bello ed utile", importo = 5.00, pathImmagine = "" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 1", descrizione2 = "Prodotto molto bello ed utile", importo = 5.00, pathImmagine = "..\\..\\..\\images\\pingu200.png" });
 			list.Add(new VmItem() { descrizione1 = "Prodotto 2", descrizione2 = "Descrizione molto lunga per provare il campo della descrizione", importo = 15.00, pathImmagine = "" });
-			list.Add(new VmItem() { descrizione1 = "Prodotto 3", descrizione2 = "prod3", importo = 35.00, pathImmagine = "" });
-			list.Add(new VmItem() { descrizione1 = "Prodotto 4", descrizione2 = "prod4", importo = 45.00, pathImmagine = "" });
-			list.Add(new VmItem() { descrizione1 = "Prodotto 5", descrizione2 = "prod5", importo = 55.00, pathImmagine = "" });
-			list.Add(new VmItem() { descrizione1 = "Prodotto 6", descrizione2 = "Prodotto molto bello ed utile", importo = 65.00, pathImmagine = "" });
-			list.Add(new VmItem() { descrizione1 = "Prodotto 7", descrizione2 = "prod7", importo = 75.00, pathImmagine = "" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 3", descrizione2 = "prod3", importo = 35.50, pathImmagine = "..\\..\\images\\pingu200.png" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 4", descrizione2 = "prod4", importo = 45.00, pathImmagine = "..\\images\\pingu200.png" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 5", descrizione2 = "prod5", importo = 55.00, pathImmagine = "images\\pingu200.png" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 6", descrizione2 = "Prodotto molto bello ed utile", importo = 65.00, pathImmagine = "\\images\\pingu200.png" });
+			list.Add(new VmItem() { descrizione1 = "Prodotto 7", descrizione2 = "prod7", importo = 75.00, pathImmagine = "/images/pingu200.png" });
 			return list;
 		}
 

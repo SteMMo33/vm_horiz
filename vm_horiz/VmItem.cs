@@ -11,6 +11,9 @@ namespace vm_horiz
 		public string descrizione2;
 		public double importo;
 		public string pathImmagine;
+		public string pathImmagineGrande;
+		public int sconto;
+		public bool inOfferta;
 
 	}
 }

@@ -11,7 +11,7 @@
             <RowDefinition/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer x:Name="ScrollViewer" Margin="5,5,5,5" Grid.Row="1" Background="#FFFFEAEA" VerticalScrollBarVisibility="Auto" BorderThickness="1,1,1,1" HorizontalScrollBarVisibility="Hidden" CanContentScroll="True" PreviewMouseLeftButtonDown="ScrollViewer_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="ScrollViewer_PreviewMouseLeftButtonUp" PreviewMouseMove="ScrollViewer_PreviewMouseMove">
+        <ScrollViewer x:Name="ScrollViewer" Margin="5,5,5,5" Grid.Row="1" Background="#FFFFEAEA" VerticalScrollBarVisibility="Auto" BorderThickness="1,1,1,1" HorizontalScrollBarVisibility="Hidden" CanContentScroll="True" PreviewMouseLeftButtonDown="ScrollViewer_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="ScrollViewer_PreviewMouseLeftButtonUp" PreviewMouseMove="ScrollViewer_PreviewMouseMove" PanningMode="HorizontalOnly">
             <Grid x:Name="gridItems" Margin="10,10,10,10" Background="#FFEEF3FF" ScrollViewer.CanContentScroll="True"/>
         </ScrollViewer>
         <Grid x:Name="gridHeader">

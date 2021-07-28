@@ -12,10 +12,22 @@
             </Border.Effect>
         </Border>
 
-        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" Width="256" OpacityMask="#FF5D5D5D"/>
+        <Image x:Name="image" HorizontalAlignment="Stretch" Height="150" Margin="0,30,0,0" VerticalAlignment="Top" Width="256" OpacityMask="#FF5D5D5D" Source="/images/scheda.jpg">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
         <Label x:Name="lblDesc1" Content="Descrizione 1" HorizontalAlignment="Left" Margin="20,0,0,50" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="22" Foreground="#FF005DFF"/>
-        <Label x:Name="lblDesc2" Content="Descrizione 2" HorizontalAlignment="Left" Margin="20,0,0,25" VerticalAlignment="Bottom" MaxWidth="300"/>
-        <Label x:Name="lblPrezzo" Content="$ 10.00" HorizontalAlignment="Right" Margin="0,0,12,22" VerticalAlignment="Bottom" FontSize="64" FontWeight="Bold" Foreground="Red">
+        <Label x:Name="lblDesc2" Content="Descrizione 2" HorizontalAlignment="Left" Margin="20,0,0,25" VerticalAlignment="Bottom" MaxWidth="200" UseLayoutRounding="False"/>
+        <Label x:Name="lblPrezzo" Content="$ 10.00" HorizontalAlignment="Right" Margin="0,0,12,22" VerticalAlignment="Bottom" FontSize="64" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>

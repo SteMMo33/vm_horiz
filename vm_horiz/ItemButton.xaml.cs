@@ -41,7 +41,12 @@ namespace vm_horiz
 			_item = item;
 			lblDesc1.Content = item.descrizione1;
 			lblDesc2.Content = item.descrizione2;
-			lblPrezzo.Content = String.Format($"€ {item.importo, 0:F2}");
+			lblPrezzo.Content = string.Format($"€ {item.importo, 0:F2}");
+
+			if (item.pathImmagine != string.Empty) {
+				image.Source = new BitmapImage( new Uri(item.pathImmagine, UriKind.Relative));
+			}
+
 		}
 
 		private void UserControl_MouseUp(object sender, MouseButtonEventArgs e)
